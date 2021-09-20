@@ -19,3 +19,18 @@ cities = {
 
 p cities["London"]
 p cities["London"]["monument"]
+
+pairs = cities.map do |key, value|
+  puts "#{key}: #{value}"
+end
+
+pairs
+
+def tag(name, content, attrs = {})
+  flat_attrs = attrs.map { |key, val| " #{key}='#{val}'" }.join
+  return "<#{name}#{flat_attrs}>#{content}</#{name}>"
+end
+
+puts tag("a", "Le Wagon", { href: "http://lewagon.org", class: "btn" })
+
+puts tag("a", "Le Wagon", href: "http://lewagon.org", class: "btn")
