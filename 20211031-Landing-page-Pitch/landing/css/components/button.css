@@ -1,0 +1,15 @@
+.btn-main {
+  color: white;
+  font-size: 17px;
+  background-color: #6C63FF;
+  border-radius: 3px;
+  font-weight: lighter;
+  padding: 5px 10px;
+  margin-top: 30px;
+}
+
+.btn-main:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #6C63FF;
+}

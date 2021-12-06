@@ -1,0 +1,11 @@
+.tabs-main {
+  display: flex;
+  padding: 10px 10px 0 10px;
+  justify-content: center;
+}
+
+.tab {
+  text-align: center;
+  padding: 2px;
+  border: 1px blue;
+}
