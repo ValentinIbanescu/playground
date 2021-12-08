@@ -1,3 +1,33 @@
+// ** STRING TO INTIGER **
+// const num = Number.parseInt('42', 10);
+// console.log(typeof(num));
+// const strToNum = Number.parseInt('87', 10);
+// console.log(strToNum);
+
+// ** NUMBER TO STRING **
+// const str = (55).toString();
+// console.log(str);
+
+
+// ** STRINGS **
+// const firstName = 'John';
+// // console.log(firstName[2]);
+// // // Print all characters starting at index parameter
+// // console.log(firstName.substring(2));
+// // console.log(firstName.substring(0,2));
+// console.log(firstName.toUpperCase());
+// console.log(firstName.toLowerCase());
+
+// let firstName = 'Philipp';
+// let lastName = 'Krink';
+// console.log(`Happy birthday, ${firstName} ${lastName}! 🥳`);
+
+// const helloWorld = 'Hello, World!';
+// console.log(helloWorld.length);
+
+// let randFloat = Math.random();
+// console.log(randFloat);
+
 // ** INTERPOLATION **
 // const weight = 27;
 // const message = `Your weight is ${weight}.`;
@@ -24,14 +54,15 @@
 //   a: 'somestring',
 //   b: 42
 // };
+// console.log(Object.keys(object1));
+// console.log(Object.entries(object1));
 // for (const [key, value] of Object.entries(object1)) {
-//   console.log(`${key}: ${value}`);
+//   console.log(`The value of '${key}' is: ${value}`);
 // }
 
 // const instruments = { "john": "guitar", "paul": "bass", "ringo": "drums", "george": "guitar" };
-
 // const components = Object.keys(instruments).forEach((beatle) => {
-//   console.log(beatle + " played the " + instruments[beatle]);
+//   console.log(beatle.toUpperCase() + " played the " + instruments[beatle]);
 // });
 // console.log(components);
 
@@ -43,21 +74,29 @@
 // }
 // console.log(componentsBeatles());
 
-//** STRING TO INTIGER **
-// const num = Number.parseInt('42', 10);
-// console.log(typeof(num));
+// let member = { name: 'Bob', age: 42 };
+// console.log(`${member.name} is ${member.age} years old.`);
+// console.log(Object.keys(member));
+// console.log(Object.values(member));
 
 // ** RANDOM **
 // const rand = Math.floor(Math.random() * 5);
 // console.log(rand);
 
 // ** ARRAY CRUD OPERATIONS & DEBUGGER**
-// const a = [1, 2, 3, 4, 5];
+// const a = ['one', 2, 3, 4, 'five'];
 // console.log(a);
-// a.push(9);
+// // console.log(a.length);
+// // console.log(a[0]);
+// // console.log(a[a.length - 1]);
+// a.push('banana');
 // console.log(a);
+// // a.push(9);
+// // console.log(a);
 // console.log(a[4]);
 // a[4] = 7;
+// console.log(a);
+// a.splice(4,1);
 // console.log(a);
 
 // debugger
@@ -74,7 +113,22 @@
 //   age: 50,
 //   eyeColor: "blue"
 // };
-// console.log(person.age);
+// console.log(typeof (person));
+// console.log(person.eyeColor);
+// person['heigth'] = 1.89;
+// console.log(person);
+
+// ** MAP object **
+// let studentAge = new Map();
+// studentAge.set('Tom', 21);
+// studentAge.set('Anna', 22);
+// studentAge.set('Mark', 20);
+// console.log(studentAge);
+// console.log(studentAge.get('Tom'));
+// studentAge.set('Tom',22);
+// console.log(studentAge);
+// studentAge.delete('Tom');
+// console.log(studentAge);
 
 
 // const input = document.getElementById("input");
@@ -116,11 +170,11 @@
 // console.log(factorial(5));
 
 // ** POWER **
-function power(base, exponent) {
-  if (exponent == 0) {
-    return 1;
-  } else {
-    return base * power(base, exponent - 1);
-  }
-}
-console.log(power(2, 10));
+// function power(base, exponent) {
+//   if (exponent == 0) {
+//     return 1;
+//   } else {
+//     return base * power(base, exponent - 1);
+//   }
+// }
+// console.log(power(2, 10));
