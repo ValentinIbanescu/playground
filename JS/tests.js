@@ -84,24 +84,24 @@
 // console.log(rand);
 
 // ** ARRAY CRUD OPERATIONS & DEBUGGER**
-const a = ['one', 2, 3, 4, 'five'];
-console.log(a);
-// console.log(a.length);
-// console.log(a[0]);
-// console.log(a[a.length - 1]);
-a.push('banana');
-console.log(a);
-// a.push(9);
+// const a = ['one', 2, 3, 4, 'five'];
 // console.log(a);
-console.log(a[4]);
-a[4] = 7;
-console.log(a);
-a.splice(4,1);
-console.log(a);
-// ** The slice() method returns a copy of a portion of an array into a new array.
-// ** Selected from start to end (end not included) - the indexes of items in that array.
-b = a.slice(2);
-console.log(b);
+// // console.log(a.length);
+// // console.log(a[0]);
+// // console.log(a[a.length - 1]);
+// a.push('banana');
+// console.log(a);
+// // a.push(9);
+// // console.log(a);
+// console.log(a[4]);
+// a[4] = 7;
+// console.log(a);
+// a.splice(4,1);
+// console.log(a);
+// // ** The slice() method returns a copy of a portion of an array into a new array.
+// // ** Selected from start to end (end not included) - the indexes of items in that array.
+// b = a.slice(2);
+// console.log(b);
 
 
 // debugger
@@ -183,3 +183,13 @@ console.log(b);
 //   }
 // }
 // console.log(power(2, 10));
+
+// Return stops function from executing if condition is true.
+const myFunction = (data, modifier) => {
+   if (data >= 3) {
+      return;
+   } else {
+      console.log(data + modifier);
+   }
+}
+myFunction(4, 5);
