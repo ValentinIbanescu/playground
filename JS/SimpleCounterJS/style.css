@@ -1,0 +1,25 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Roboto', sans-serif; */
+body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.counter {
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+  margin-top: -90px;
+  margin-bottom: 50px;
+  color: #28A745;
+}
+
+.content {
+  align-content: center;
+  justify-content: space-around;
+  grid-column: 2;
+  grid-row: 2 / 4;
+}
