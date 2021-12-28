@@ -7,6 +7,4 @@ var smallestEqual = function(nums) {
     })
     return (result.length == 0 ?  -1 : Math.min(...result));
 };
-
-let nums = [1,2,3,4,5,6,7,8,9,0];
-console.log(smallestEqual(nums));
+console.log(smallestEqual([7, 8, 2, 1, 4, 22]));
