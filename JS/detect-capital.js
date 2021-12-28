@@ -1,3 +1,4 @@
+// Detect when the Capital letters are used correctly: all caps, all small or Capitalize.
 var detectCapitalUse = function(word) {
     switch (word) {
       case (word.toUpperCase()) : return true;
@@ -10,5 +11,7 @@ var detectCapitalUse = function(word) {
         break;
     }
 };
-
-console.log(detectCapitalUse("FlaG"));
+console.log(detectCapitalUse("JavaScript"));
+console.log(detectCapitalUse("Javascript"));
+console.log(detectCapitalUse("javascript"));
+console.log(detectCapitalUse("JAVASCRIPT"));
