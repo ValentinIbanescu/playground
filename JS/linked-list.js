@@ -15,9 +15,6 @@ const list = {
         }
     };
 
-    console.log(list);
-    console.log(list.head);
-
   // Node constructor
 class ListNode {
   constructor(data) {
@@ -49,6 +46,14 @@ class LinkedList {
   clear() {
     this.header = null;
   }
+  // Helper method - getLast
+  getLast() {
+    let lastNode = this.header;
+    while(lastNode.next) {
+      lastNode = lastNode.next;
+    }
+    return lastNode;
+  }
 }
 
 let list1 = new LinkedList(node1);
@@ -56,6 +61,6 @@ let list2 = new LinkedList(node2);
 //let list3 = list2.clear();
 
 console.log(list1);
+console.log(list1.getLast());
 console.log(list1.header.next.data);
 console.log(list1.size());
-console.log(list2.size());
