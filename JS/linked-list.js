@@ -45,10 +45,15 @@ class LinkedList {
     }
     return count;
   }
+  // Helper method - clear
+  clear() {
+    this.header = null;
+  }
 }
 
 let list1 = new LinkedList(node1);
 let list2 = new LinkedList(node2);
+//let list3 = list2.clear();
 
 console.log(list1);
 console.log(list1.header.next.data);
