@@ -12,3 +12,4 @@ puts times_two (5)
 puts sum 1, 2
 puts sum(1, 2)
 # puts sum (1, 2)
+# Throw error

@@ -5,6 +5,14 @@
       {capital: 'Rome', country: 'Italy', country_code: 'IT'}
     ]
 
+# Print all in the format: Paris, France [FR]
+# Iterate with each and interpolate variables
+@country_data.each do |country|
+  puts "#{country.values[0]}, #{country.values[1]} [#{country.values[2]}]"
+end
+
+# Print the former last country of the array
+puts "Former last country is #{@country_data[-2][:country]}."
 
 def get_country_code(city) # Paris
   @country_data.each do |hash|
