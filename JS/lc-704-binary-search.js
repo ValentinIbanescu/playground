@@ -6,8 +6,7 @@
    // Solution 2: Binary Search by the book.
    let left = 0;
    let right = nums.length - 1;
-   let pivot = 0;
-  //  console.log(pointer);
+   let pointer = 0;
    while (left <= right) {
      pointer = Math.floor(left + (right - left) / 2);
      if (target < nums[pointer]) {
