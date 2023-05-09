@@ -1,4 +1,6 @@
-package CalculatorHomeLoan;
+// About Future Value (FV) - https://www.investopedia.com/terms/f/futurevalue.asp
+// Source: https://docs.oracle.com/javase/tutorial/java/javaOO/arguments.html
+ package CalculatorHomeLoan;
 
 import java.util.Scanner;
 

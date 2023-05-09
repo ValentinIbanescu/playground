@@ -16,5 +16,5 @@ var solution = function(isBadVersion) {
         } else { left = pointer + 1; };
       };
       return version;
-    };
+   };
 };

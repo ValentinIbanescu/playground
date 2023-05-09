@@ -18,5 +18,16 @@ var searchInsert = function(nums, target) {
     return right + 1;
 };
 
+const insertInPosition = (nums, target) => {
+  nums.splice(searchInsert(nums, target), 0, target);
+  return nums;
+}
+
+
+
 console.log(searchInsert([1,3,5,6],5));
 console.log(searchInsert([1,3,5,6],2));
+
+console.log(insertInPosition([1,3,5,6],5));
+console.log(insertInPosition([1,3,5,6],2));
+console.log(insertInPosition([],2));
